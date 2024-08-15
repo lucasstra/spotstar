@@ -3,80 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music</title>
+    <title>Music and Actors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Sidebar */
+        nav {
+            width: 200px;
+            background-color: #111;
+            padding: 15px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Main content */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .content h1 {
+            margin-top: 0;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-container div {
+            text-align: center;
+        }
+
+        .grid-container img {
+            width: 100px; /* Fixed width */
+            height: 100px; /* Fixed height */
+            border-radius: 50%; /* Circular shape */
+            object-fit: cover; /* Ensure image covers circle */
+            border: 2px solid #ccc; /* Optional border for better visibility */
+        }
+
+        .grid-container a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Adjust page content for better responsiveness */
+        .content h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation Links -->
+    <!-- Sidebar Navigation Links -->
     <nav>
-        <a href="movies_music.html">Home</a> |
+        <a href="movies_music.html">Home</a>
         <a href="movies.html">Movies</a>
+        <a href="#music-directors">Music Directors</a>
+        <a href="#singers">Singers</a>
+        <a href="#actors">Actors</a>
+        <a href="#genres">Genres</a>
     </nav>
 
-    <h1>Music Directors</h1>
-    <div>
-        <div>
-            <img src="music_director1.jpg" alt="A. R. Rahman" width="100" height="100">
-            <p>A. R. Rahman</p>
+    <!-- Main Content -->
+    <div class="content">
+        <h1 id="music-directors">Music Directors</h1>
+        <div class="grid-container">
+            <div>
+                <a href="../HTML/Music/rahman.html">
+                    <img src="../HTML/MEDIA/IMAGE/Rahman.jpg" alt="A. R. Rahman">
+                    <p>A. R. Rahman</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/ilayaraja.html">
+                    <img src="../HTML/MEDIA/IMAGE/Ilayaraja.jpg" alt="Ilayaraja">
+                    <p>Ilayaraja</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/yuvan.html">
+                    <img src="../HTML/MEDIA/IMAGE/Yuvan.jpg" alt="Yuvan Shankar Raja">
+                    <p>Yuvan Shankar Raja</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/harris.html">
+                    <img src="../HTML/MEDIA/IMAGE/Harris.jpg" alt="Harris Jayaraj">
+                    <p>Harris Jayaraj</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/anirudh.html">
+                    <img src="../HTML/MEDIA/IMAGE/Anirudh.jpg" alt="Anirudh">
+                    <p>Anirudh</p>
+                </a>
+            </div>
         </div>
-        <div>
-            <img src="music_director2.jpg" alt="Hans Zimmer" width="100" height="100">
-            <p>Hans Zimmer</p>
-        </div>
-        <div>
-            <img src="music_director3.jpg" alt="John Williams" width="100" height="100">
-            <p>John Williams</p>
-        </div>
-        <div>
-            <img src="music_director4.jpg" alt="Ludwig Göransson" width="100" height="100">
-            <p>Ludwig Göransson</p>
-        </div>
-        <div>
-            <img src="music_director5.jpg" alt="Ennio Morricone" width="100" height="100">
-            <p>Ennio Morricone</p>
-        </div>
-    </div>
 
-    <h1>Singers</h1>
-    <div>
-        <div>
-            <img src="singer1.jpg" alt="Adele" width="100" height="100">
-            <p>Adele</p>
+        <h1 id="singers">Singers</h1>
+        <div class="grid-container">
+            <div>
+                <a href="../HTML/Music/spb.html">
+                    <img src="../HTML/MEDIA/IMAGE/spb.jpg" alt="SPB">
+                    <p>SPB</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/chitra.html">
+                    <img src="../HTML/MEDIA/IMAGE/Chitra.jpg" alt="Chitra">
+                    <p>Chitra</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/hariharan.html">
+                    <img src="../HTML/MEDIA/IMAGE/Hariharan.jpg" alt="Hariharan">
+                    <p>Hariharan</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/vijay_antony.html">
+                    <img src="../HTML/MEDIA/IMAGE/Vijay_antony.jpg" alt="Vijay Antony">
+                    <p>Vijay Antony</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/yuvan_singer.html">
+                    <img src="../HTML/MEDIA/IMAGE/Yuvan.jpg" alt="Yuvan Shankar Raja">
+                    <p>Yuvan Shankar Raja</p>
+                </a>
+            </div>
         </div>
-        <div>
-            <img src="singer2.jpg" alt="Freddie Mercury" width="100" height="100">
-            <p>Freddie Mercury</p>
-        </div>
-        <div>
-            <img src="singer3.jpg" alt="Beyoncé" width="100" height="100">
-            <p>Beyoncé</p>
-        </div>
-        <div>
-            <img src="singer4.jpg" alt="Elvis Presley" width="100" height="100">
-            <p>Elvis Presley</p>
-        </div>
-        <div>
-            <img src="singer5.jpg" alt="Whitney Houston" width="100" height="100">
-            <p>Whitney Houston</p>
-        </div>
-    </div>
 
-    <h1>Genres</h1>
-    <div>
-        <div>
-            <p>Pop</p>
+        <h1 id="actors">Actors</h1>
+        <div class="grid-container">
+            <div>
+                <a href="../HTML/Music/vijay.html">
+                    <img src="../HTML/MEDIA/IMAGE/Vijay.jpg" alt="Vijay">
+                    <p>Vijay</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/ajith.html">
+                    <img src="../HTML/MEDIA/IMAGE/Ajith.jpg" alt="Ajith Kumar">
+                    <p>Ajith Kumar</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/kamal.html">
+                    <img src="../HTML/MEDIA/IMAGE/Kamal.jpg" alt="Kamal Haasan">
+                    <p>Kamal Haasan</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/rajnikanth.html">
+                    <img src="../HTML/MEDIA/IMAGE/Rajnikanth.jpg" alt="Rajnikanth">
+                    <p>Rajnikanth</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/surya.html">
+                    <img src="../HTML/MEDIA/IMAGE/Surya.jpg" alt="Surya">
+                    <p>Surya</p>
+                </a>
+            </div>
         </div>
-        <div>
-            <p>Rock</p>
-        </div>
-        <div>
-            <p>Classical</p>
-        </div>
-        <div>
-            <p>Jazz</p>
-        </div>
-        <div>
-            <p>Hip-Hop</p>
+
+        <h1 id="genres">Genres</h1>
+        <div class="grid-container">
+            <div>
+                <a href="../HTML/Music/love.html">
+                    <img src="../HTML/MEDIA/IMAGE/Love.jpg" alt="Love">
+                    <p>Love</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/kuthu.html">
+                    <img src="../HTML/MEDIA/IMAGE/Kuthu.jpg" alt="Kuthu">
+                    <p>Kuthu</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/classical.html">
+                    <img src="../HTML/MEDIA/IMAGE/Classical.jpg" alt="Classical">
+                    <p>Classical</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/sad.html">
+                    <img src="../HTML/MEDIA/IMAGE/Sad.jpg" alt="Sad">
+                    <p>Sad</p>
+                </a>
+            </div>
+            <div>
+                <a href="../HTML/Music/hiphop.html">
+                    <img src="../HTML/MEDIA/IMAGE/Hip_Hop.jpg" alt="Hip-Hop">
+                    <p>Hip-Hop</p>
+                </a>
+            </div>
         </div>
     </div>
 

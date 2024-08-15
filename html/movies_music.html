@@ -4,16 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies and Music</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Left Sidebar */
+        .left-sidebar {
+            width: 200px;
+            background-color: #111;
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            height: 100%;
+        }
+
+        .left-sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #575757;
+        }
+
+        .left-sidebar a:hover {
+            background-color: #333;
+        }
+
+        /* Right Sidebar */
+        .right-sidebar {
+            width: 300px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right-sidebar img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .right-sidebar h2 {
+            margin: 20px 0;
+        }
+
+        .right-sidebar a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        .right-sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 220px; /* Adjust based on left sidebar width */
+            margin-right: 320px; /* Adjust based on right sidebar width */
+            padding: 20px;
+        }
+
+        .main-content h1 {
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Choose an Option</h1>
-    <p>
-        <a href="movies.html">Movies</a>
-    </p>
-    <p>
-        <a href="music.html">Music</a>
-    </p>
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <a href="../index.html">Login</a>
+        <a href="welcome.html">Welcome</a>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+        <div class="section">
+            <img src="../HTML/MEDIA/IMAGE/music.jpg" alt="Music">
+            <h2>Music</h2>
+            <a href="music.html">Explore Music</a>
+        </div>
+        <div class="section">
+            <img src="../HTML/MEDIA/IMAGE/movies.jpg" alt="Movies">
+            <h2>Movies</h2>
+            <a href="movies.html">Explore Movies</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Choose an Option</h1>
+        <p>
+            <a href="movies.html">Movies</a>
+        </p>
+        <p>
+            <a href="music.html">Music</a>
+        </p>
+    </div>
 
 </body>
 </html>

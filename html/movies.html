@@ -4,79 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Sidebar */
+        nav {
+            width: 200px;
+            background-color: #111;
+            padding: 15px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Main content */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .content h1 {
+            margin-top: 0;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-container div {
+            text-align: center;
+        }
+
+        .grid-container img {
+            width: 100px; /* Fixed width */
+            height: 100px; /* Fixed height */
+            border-radius: 50%; /* Circular shape */
+            object-fit: cover; /* Ensure image covers circle */
+            border: 2px solid #ccc; /* Optional border for better visibility */
+        }
+
+        .grid-container a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Adjust page content for better responsiveness */
+        .content h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation Links -->
+    <!-- Sidebar Navigation Links -->
     <nav>
-        <a href="movies_music.html">Home</a> |
+        <a href="moviesmusic.html">Home</a>
+        <a href="movies.html">Movies</a>
         <a href="music.html">Music</a>
     </nav>
 
-    <h1>Actors</h1>
-    <div>
-        <div>
-            <img src="actor1.jpg" alt="Robert Downey Jr." width="100" height="100">
-            <a href=""></a><p>Robert Downey Jr.</p>
+    <!-- Main Content -->
+    <div class="content">
+        <h1 id="actors">Actors</h1>
+        <div class="grid-container">
+            <div>
+                <a href="vijay.html">
+                    <img src="../HTML/MEDIA/IMAGE/Vijay.jpg" alt="Vijay">
+                    <p>Vijay</p>
+                </a>
+            </div>
+            <div>
+                <a href="ajith.html">
+                    <img src="../HTML/MEDIA/IMAGE/Ajith.jpg" alt="Ajith Kumar">
+                    <p>Ajith Kumar</p>
+                </a>
+            </div>
+            <div>
+                <a href="kamal.html">
+                    <img src="../HTML/MEDIA/IMAGE/Kamal.jpg" alt="Kamal Haasan">
+                    <p>Kamal Haasan</p>
+                </a>
+            </div>
+            <div>
+                <a href="rajnikanth.html">
+                    <img src="../HTML/MEDIA/IMAGE/Rajnikanth.jpg" alt="Rajnikanth">
+                    <p>Rajnikanth</p>
+                </a>
+            </div>
+            <div>
+                <a href="surya.html">
+                    <img src="../HTML/MEDIA/IMAGE/Surya.jpg" alt="Surya">
+                    <p>Surya</p>
+                </a>
+            </div>
         </div>
-        <div>
-            <img src="actor2.jpg" alt="Scarlett Johansson" width="100" height="100">
-            <p>Scarlett Johansson</p>
-        </div>
-        <div>
-            <img src="actor3.jpg" alt="Leonardo DiCaprio" width="100" height="100">
-            <p>Leonardo DiCaprio</p>
-        </div>
-        <div>
-            <img src="actor4.jpg" alt="Natalie Portman" width="100" height="100">
-            <p>Natalie Portman</p>
-        </div>
-        <div>
-            <img src="actor5.jpg" alt="Chris Hemsworth" width="100" height="100">
-            <p>Chris Hemsworth</p>
-        </div>
-    </div>
 
-    <h1>Directors</h1>
-    <div>
-        <div>
-            <img src="director1.jpg" alt="Steven Spielberg" width="100" height="100">
-            <p>Steven Spielberg</p>
+        <h1 id="directors">Directors</h1>
+        <div class="grid-container">
+            <div>
+                <a href="manirathnam.html">
+                    <img src="../HTML/MEDIA/IMAGE/Manirathnam.jpg" alt="Mani Ratnam">
+                    <p>Mani Ratnam</p>
+                </a>
+            </div>
+            <div>
+                <a href="shankar.html">
+                    <img src="../HTML/MEDIA/IMAGE/Shankar.jpg" alt="Shankar">
+                    <p>Shankar</p>
+                </a>
+            </div>
+            <div>
+                <a href="bala.html">
+                    <img src="../HTML/MEDIA/IMAGE/Bala.jpg" alt="Bala">
+                    <p>Bala</p>
+                </a>
+            </div>
+            <div>
+                <a href="kv_anand.html">
+                    <img src="../HTML/MEDIA/IMAGE/KV_Anand.jpg" alt="K. V. Anand">
+                    <p>K. V. Anand</p>
+                </a>
+            </div>
+            <div>
+                <a href="vetri_marans.html">
+                    <img src="../HTML/MEDIA/IMAGE/Vetri_Marans.jpg" alt="Vetrimaaran">
+                    <p>Vetrimaaran</p>
+                </a>
+            </div>
         </div>
-        <div>
-            <img src="director2.jpg" alt="Christopher Nolan" width="100" height="100">
-            <p>Christopher Nolan</p>
-        </div>
-        <div>
-            <img src="director3.jpg" alt="Quentin Tarantino" width="100" height="100">
-            <p>Quentin Tarantino</p>
-        </div>
-        <div>
-            <img src="director4.jpg" alt="Martin Scorsese" width="100" height="100">
-            <p>Martin Scorsese</p>
-        </div>
-        <div>
-            <img src="director5.jpg" alt="James Cameron" width="100" height="100">
-            <p>James Cameron</p>
-        </div>
-    </div>
 
-    <h1>Genres</h1>
-    <div>
-        <div>
-            <p>Action</p>
+        <h1 id="genres">Genres</h1>
+        <div class="grid-container">
+            <div>
+                <a href="action.html">
+                    <img src="../HTML/MEDIA/IMAGE/Action.jpg" alt="Action">
+                    <p>Action</p>
+                </a>
+            </div>
+            <div>
+                <a href="comedy.html">
+                    <img src="../HTML/MEDIA/IMAGE/Comedy.jpg" alt="Comedy">
+                    <p>Comedy</p>
+                </a>
+            </div>
+            <div>
+                <a href="drama.html">
+                    <img src="../HTML/MEDIA/IMAGE/Drama.jpg" alt="Drama">
+                    <p>Drama</p>
+                </a>
+            </div>
+            <div>
+                <a href="thriller.html">
+                    <img src="../HTML/MEDIA/IMAGE/Thriller.jpg" alt="Thriller">
+                    <p>Thriller</p>
+                </a>
+            </div>
+            <div>
+                <a href="romance.html">
+                    <img src="../HTML/MEDIA/IMAGE/Romance.jpg" alt="Romance">
+                    <p>Romance</p>
+                </a>
+            </div>
         </div>
-        <div>
-            <p>Comedy</p>
-        </div>
-        <div>
-            <p>Drama</p>
-        </div>
-        <div>
-            <p>Sci-Fi</p>
-        </div>
-        <div>
-            <p>Thriller</p>
+
+        <h1 id="trending">Trending Movies</h1>
+        <div class="grid-container">
+            <div>
+                <a href="movie1.html">
+                    <img src="../HTML/MEDIA/IMAGE/Movie1.jpg" alt="Movie 1">
+                    <p>Movie 1</p>
+                </a>
+            </div>
+            <div>
+                <a href="movie2.html">
+                    <img src="../HTML/MEDIA/IMAGE/Movie2.jpg" alt="Movie 2">
+                    <p>Movie 2</p>
+                </a>
+            </div>
+            <div>
+                <a href="movie3.html">
+                    <img src="../HTML/MEDIA/IMAGE/Movie3.jpg" alt="Movie 3">
+                    <p>Movie 3</p>
+                </a>
+            </div>
+            <div>
+                <a href="movie4.html">
+                    <img src="../HTML/MEDIA/IMAGE/Movie4.jpg" alt="Movie 4">
+                    <p>Movie 4</p>
+                </a>
+            </div>
+            <div>
+                <a href="movie5.html">
+                    <img src="../HTML/MEDIA/IMAGE/Movie5.jpg" alt="Movie 5">
+                    <p>Movie 5</p>
+                </a>
+            </div>
         </div>
     </div>
 
